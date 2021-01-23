@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>Penguin Points - Please Wait for the Next Bingo Game</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#14659a"> <!-- theme-color-in-Chrome-39-for-Android -->
+    <meta name="Keywords" content="Penguinpoints, bingo, online bingo, free bingo, bingo games, free online bingo, bingo com, bingo sites" />
+    <meta name="Description" content="Penguinpoints - Free Online Bingo Now. Right now you can play our super fun quick online bingo game. No downloads or installs necessary. Join now to play bingo for free." />
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <!--
+    <meta property="og:url" content="http://www.your-domain.com/your-page.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description" content="Your description" />
+    <meta property="og:image" content="http://www.your-domain.com/path/image.jpg" />
+    -->
+    <!-- Template favicon -->
+    <link rel="apple-touch-icon" sizes="70x70" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <!-- Template default css -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+    <![endif]-->
+    <!--TODO: Add Chat if required-->
+    <!-- Fontawesome icons -->
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+             google_ad_client: "ca-pub-4476144237965405",
+             enable_page_level_ads: true
+         });
+     </script>-->
+</head>
+
+<body id="game-page">
+    <!-- Top Nav -->
+    <section class="top-nav">
+        <a href="index.html" class="site-title">
+            <img src="images/logo.png">
+            </a>
+        <!--<h1 class="game-start">NEXT GAME STARTS in <span>45</span></h1>-->
+        <span class="points">Please Press Play to Start Next Game</span>
+    </section>
+    <!-- Main Section -->
+    <main id="content" class="group inner-page" role="main">
+        <section class="container">
+            <section class="content-holder">
+                <div class="intervalvideo" id="videoDiv" style="width:900px;height:675px;">
+
+                </div>
+            </section>
+			<div id="spotxvideo"></div>
+            <div id="spotxbanner"></div>
+        </section>
+        <!--TODO: Check if footer required-->
+    </main>
+    <!-- Scripts -->
+    <!--<script src="Scripts/lib/jquery-1.12.4.min.js"></script>-->
+    <script src="Scripts/lib/jquery-1.7.2.prod.js"></script>
+    <script src="Scripts/lib/theme.js"></script>
+    <script defer src="fontawesome-5.4.1/js/all.js"></script>
+    <script src="Scripts/lib/all.js"></script>
+    <script src="Scripts/games/Intermission.js"></script>
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66023378-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-66023378-9');
+</script>
+<!--brid tag-->
+<!--<script type="text/javascript" src="//services.brid.tv/player/build/brid.min.js"></script> <div id="Brid_87916697" class="brid" style="width:16;height:9;" > </div> <script type="text/javascript"> $bp("Brid_87916697", {"id":"15196","width":"16","height":"9","video":"331595"}); </script>-->
+<!--end brid tag-->
+
+<!--spotx tag-->
+<script type="text/javascript">
+        var intermission;
+        var message = "";
+        function adDone(spotx_ad_found) {
+            if (spotx_ad_found) {
+                message = "Ad found and complete";
+            }
+            else {
+                message = "Ad not found";
+            }
+            if(intermission===undefined ){intermission = new IntermissionPortal();}
+            intermission.AdComplete(message);
+        };
+
+        function adStarted() {
+            intermission.AdStart(0, '');
+        }
+        
+        function adError(){
+        console.log('Error');    
+        }
+        
+        $(document).ready(function () {
+            intermission = new IntermissionPortal();
+        });
+    </script>
+    <script type="text/javascript" src="//search.spotxchange.com/js/spotx.js" data-spotx_channel_id="177600" 
+            data-spotx_content_width="900" data-spotx_content_height="675" data-spotx_ad_done_function="adDone"
+            data-spotx_content_container_id="videoDiv" data-spotx_banner_container_id="spotxbanner"
+            data-spotx_ad_unit="instream" data-spotx_autoplay="0" data-spotx_ad_started_function="adStarted"
+            data-spotx_ad_error_function="adError" data-spotx_ad_volume="1.0" data-spotx_content_type="game"> 
+    </script>-->
+    <!-- Scripts Ends! -->
+    
+    <!--Bing UET-->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"25080889"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script> 
+  <!--Bing UET END-->
+  </body>
+</html>
